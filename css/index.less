@@ -1,0 +1,139 @@
+
+
+/* 默认样式重置 start */
+
+body,ul,h2,h3,h4,h5,p
+{
+	margin: 0;
+	padding: 0;
+}
+li
+{
+	list-style: none;
+}
+a
+{
+	text-decoration: none;
+	color: #ef5750;
+}
+button
+{
+	border: none;
+	cursor: pointer;
+}
+img
+{
+	border: none;
+	vertical-align: top;
+}
+body
+{
+	background-color: #eeeeee;
+}
+button
+{
+	padding: 0;
+	margin: 0;
+}
+/* 默认样式重置end */
+
+
+/* mian start */
+
+	main
+	{
+		padding: 20px 60px 0;
+		background-color: white;
+		margin: 0 auto;
+		display: grid;
+		max-width: 900px;
+		grid-row-gap: 60px;
+		header
+		{
+			display: grid;
+			grid-template-columns: 3fr 1fr;
+			
+			nav
+			{
+				display: flex;
+				align-items: baseline;
+				li
+				{
+					margin-right: 20px;
+				}
+			}
+
+			button
+			{
+				background-color: #ef5350;
+				color: white;
+				padding: 8px 26px;
+				text-transform:uppercase;
+				justify-self: end;
+			}
+		}
+
+
+		section
+		{
+			display: grid;
+			grid-template-columns: 3fr 1fr;
+			grid-column-gap: 60px;
+			
+			article
+			{
+				text-align: center;
+				h2
+				{
+					padding-top: 10px;
+					color: #4e4544;
+					font-size: 33px;
+					margin-bottom: 56px;
+				}
+				p
+				{
+					line-height: 26px;
+					margin-bottom: 48px;
+				}
+				img
+				{
+					width: 100%;
+				}
+			}
+
+			aside
+			{
+				padding: 20px;
+				border: 1px solid #a2a2a2;
+			}	
+		}
+
+
+		footer
+		{
+			text-align: center;
+			h4
+			{
+				color: #ef5350;
+			}
+		}
+	}
+
+	@media only screen and (max-width:600px) 
+	{
+  	
+  		main
+  		{
+  			section
+			{
+				grid-template-columns: 1fr;
+				grid-row-gap: 60px;
+			}
+  		}
+  			
+  		
+		
+	}
+
+
+/* main end */
